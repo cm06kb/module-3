@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./css/custom.css" rel="stylesheet">
+
+	<title>Phonebook</title>
+
+</head>
+
+<body>
+	<header>
+		<nav id="nav" class="navbar navbar-light justify-content-end fixed-top">
+			<a class="navbar-brand" href="#">
+				<img src="images/logo.png" width="40" height="40" alt="Phonebook logo.">
+			</a>
+		</nav>
+	</header>
+
+	<div id = "section_1" class="container-fluid">
+
+		<div class="d-flex justify-content-end">
+			<div class="row">
+				<div class="col-md-12">
+					<h1><span id="the">The</span><span id="phonebook">Phonebook</span></h1>
+				</div>
+			</div>
+		</div>
+
+		<div id="search">
+			<div class="row">
+
+				<div class="col">
+				</div>
+
+				<div class="col">
+					<a href="#section_2" id="person_button" class="btn jelly">Search by Person</a>
+				</div>
+
+				<div class="col">
+					<a href="#section_3" id="business_button" class="btn jelly">Search by Business</a>
+				</div>
+
+				<div class="col">
+				</div>
+
+			</div>
+			<!--/.row-->
+		</div>
+		<!--/.id search-->
+	</div>
+	<!--/. container-->
+
+<!--PAGE 2: SEARCH BY PERSON-->
+<section id = "section_2" class="container">
+
+	<div class="myclass">
+		<div class="row ">
+			<div class="col-md-12 ">
+				<form class="form-inline ">
+		  <fieldset class="form-group">
+		    <input type="text" class="form-control" id="person_name" placeholder="Enter Surname (e.g. Smith)">
+		  </fieldset>
+			<p>in</p>
+		  <fieldset class="form-group">
+		    <input type="text" class="form-control" id="person_location" placeholder="Enter Location (e.g. 'London' or 'NW5')">
+		  </fieldset>
+		  <button type="submit" class="btn btn-default">Search</button>
+		</form>
+
+			</div>
+			<div class="col-md-12 align-self-center search_option">
+					<p>Would you like to search by <span>Business</span> instead?</p>
+					</div>
+		</div>
+	</div>
+
+		</section>
+
+
+
+<!--PAGE 3: SEARCH BY BUSINESS-->
+
+		<div id = "section_3" class="container">
+			<div class ="row">
+		<div class="col-md-12">
+
+		<form class="form-inline">
+			<div class="form-group">
+				<div class="dropdown show">
+				  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    Find a business
+				  </a>
+
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<a id = "type" class="dropdown-item" href="#business_type">Type of Business</a>
+				    <a id = "name" class="dropdown-item" href="#business_name">Name of Business</a>
+				  </div>
+				</div>
+				<input "text" class="form-control" id="business_type" placeholder="Enter Type of Business (e.g. 'Toys')" >
+				<input type="text" class="form-control" id="business_name" placeholder="Enter name of Business (e.g. 'DabZ')">
+			</div>
+			<p>in</p>
+			<div class="form-group">
+				<input type="text" class="form-control" id="business_location" placeholder="Enter Location (e.g. 'London' or 'NW5')">
+			</div>
+			<button type="submit" class="btn btn-default">Search</button>
+		</form>
+			</div>
+			<div class="col-md-12 align-self-center search_option">
+					<p>Would you like to search by <span>Person</span> instead?</p>
+					</div>
+			</div>
+			</div>
+
+
+
+
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+	</script>
+	<script src="./js/engine.js"></script>
+</body>
+
+</html>
